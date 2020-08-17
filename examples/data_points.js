@@ -1,6 +1,6 @@
 require('dotenv').config({path:'examples/.env.example'})
 
-const Dapi = require('../lib/index').default
+const Dapi = require('../dist/index')
 
 const start = async () => {
   const client = new Dapi({

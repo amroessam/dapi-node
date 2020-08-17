@@ -1,7 +1,6 @@
+require('dotenv').config({ path: 'examples/.env.example' })
 
-require('dotenv').config({path:'examples/.env.example'})
-
-const Dapi = require('../lib/index').default
+const Dapi = require('../dist/index')
 const start = async () => {
   const client = new Dapi({
     appKey: process.env.DAPI_APP_KEY || 'DAPI_APP_KEY',
@@ -9,8 +8,7 @@ const start = async () => {
   })
   try {
     const et = await client.ExchangeToken({
-      accessCode:
-        'ACCESS_CODE',
+      accessCode: 'ACCESS_CODE',
       connectionID: 'CONNECTION_ID',
     })
     console.log(et)
