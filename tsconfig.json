@@ -3,9 +3,10 @@
     "target": "ESNext",
     "module": "commonjs",
     "declaration": true,
-    "outDir": "./lib",
+    "outDir": "dist",
     "strict": true,
     "esModuleInterop": true
   },
-  "include": ["src"]
+  "include": ["lib", "lib/index.d.ts", "lib/index.ts"],
+  "exclude": ["node_modules", "dist"]
 }
