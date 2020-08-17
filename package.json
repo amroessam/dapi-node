@@ -1,10 +1,10 @@
 {
   "name": "dapi-node",
-  "version": "1.1.0",
+  "version": "1.1.0-rc1",
   "description": "dapi api node library",
   "main": "dist/index.js",
   "scripts": {
-    "prepublish": "tsc"
+    "prepare": "tsc"
   },
   "repository": {
     "type": "git",
